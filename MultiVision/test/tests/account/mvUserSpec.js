@@ -9,7 +9,7 @@ describe('mvUser', function() {
     }));
 
     it('should return true if the roles array has an admin entry', inject(function(mvUser) {
-      var user = new mvUser();  
+      var user = new mvUser();
       user.roles = ['admin'];
       expect(user.isAdmin()).to.be.true;
     }))
